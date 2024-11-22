@@ -1,0 +1,140 @@
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+  }
+  /* General Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-link {
+    color: darkolivegreen;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    background-color: #444;
+    border-radius: 4px;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    list-style-type: none;
+    background-color: #444;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+  
+  .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #ccc;
+  }
+  
+  /* Show Dropdown Menu on Hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Dropdown Arrow */
+  .dropdown > .nav-link {
+    padding-right: 20px; /* Space for arrow */
+  }
+  
+  .dropdown > .nav-link::after {
+    content: '▼'; /* Unicode for downward arrow */
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown:hover > .nav-link::after {
+    transform: translateY(-50%) rotate(180deg); /* Rotate arrow upwards on hover */
+  }
+
+}
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+nav li{
+  display: inline;
+}
+nav a{
+  text-decoration: none;
+  padding-right: 10px;
+}
+nav a:link{
+  color: grey;
+}
+nav a:visited{
+  color: greenyellow;
+}
+nav a:hover{
+  color: dimgrey;
+}
+nav a:active{
+  color: darkgreen;
+}
+main{
+  max-width: 1200px;
+  margin: 20px auto;
+}
+footer{
+  text-align: center;
+  border-top: 1px solid slategrey;
+  padding: 10px;
+}
+/*CSS without a media query--applies to all sizes unless overridden*/
+h1{
+    text-align: center;
+    font-size: 4em;
+ }
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+  h1{
+    font-size: 1.8em;
+}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5em;
+  }
+}
