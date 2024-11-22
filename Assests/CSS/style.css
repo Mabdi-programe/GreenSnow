@@ -88,7 +88,6 @@ body, ul, li, a {
     transform: translateY(-50%) rotate(180deg); /* Rotate arrow upwards on hover */
   }
 
-}
 nav ul{
   list-style-type: none;
   text-align: center;
@@ -124,7 +123,7 @@ footer{
 /*CSS without a media query--applies to all sizes unless overridden*/
 h1{
     text-align: center;
-    font-size: 4em;
+    font-size: 30px;
  }
 /* CSS Adjustments for Tablets */
 @media only screen and (max-width: 1024px) {
