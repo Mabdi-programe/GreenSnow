@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: aqua;
+   
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+footer p {
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+}
+
+nav a:visited{
+    color: white;
+
+.nav-link {
+    color: white;
+}
+
+.nav-link: hover {
+    color: aqua;
+}
+
+
+
+
+
+
