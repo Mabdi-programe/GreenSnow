@@ -1,17 +1,23 @@
-body, ul, li, a {
+body {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: Arial, sans-serif;
+    border-top: 10px solid mediumseagreen;
+    border-bottom: 10px solid mediumseagreen;
   }
   /* General Navbar Styles */
 .navbar {
-    background-color: #333;
+    background-color: darkolivegreen;
     padding: 10px;
+    display: flex;
+    justify-content: center;
   }
   
   .nav-menu {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -87,7 +93,14 @@ body, ul, li, a {
   .dropdown:hover > .nav-link::after {
     transform: translateY(-50%) rotate(180deg); /* Rotate arrow upwards on hover */
   }
-
+  header{
+    text-align: center;
+    color: darkgreen;
+  }
+  .snow h2{
+    color: rgb(140, 193, 218);
+  }
+  
 nav ul{
   list-style-type: none;
   text-align: center;
@@ -115,11 +128,24 @@ main{
   max-width: 1200px;
   margin: 20px auto;
 }
+main{
+  background-color: white;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+hr{
+  size: 3px;
+}
 footer{
+  background-color: darkolivegreen;
+  background-image: url(images/logo.jpg);
   text-align: center;
   border-top: 1px solid slategrey;
   padding: 10px;
-}
+  color: white;
+  clear: both;
+ }
+
 /*CSS without a media query--applies to all sizes unless overridden*/
 h1{
     text-align: center;
