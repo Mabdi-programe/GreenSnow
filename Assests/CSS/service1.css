@@ -1,0 +1,82 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1525498128493-380d1990a112?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgb(43, 87, 43);
+    color: black;
+    font-weight: bold;
+  }
+
+  .lawn-service {
+    background-image: url(https://img.freepik.com/premium-photo/green-grass-frame-white-background_52253-1755.jpg?w=1060) ; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: black;
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.main-lawn {
+  max-width: 1500px;
+  margin: 20px auto;
+  background-image: url(https://img.freepik.com/premium-photo/frame-made-aloe-vera-white_51524-5194.jpg?w=996) ; 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+  .service-list {
+   padding: 0 15px 0 15px;
+ }
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 1em 0 1em 0;
+}
+.service {
+  padding: 0;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 20px;
+  background: #999797da;
+
+}
+
+.testimonials {
+  background: #999797da;
+  padding: 2em;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+.testimonial {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.testimonial p {
+  font-style: italic;
+}
+.testimonial h3 {
+  margin-top: 0.5em;
+  color: #4CAF50;
+}
+
+
+
+
+
+
+
+footer{
+  background-color: darkolivegreen;
+  background-image: url(images/logo.jpg);
+  text-align: center;
+  border-top: 1px solid slategrey;
+  padding: 10px;
+  color: white;
+  clear: both;
+ }
