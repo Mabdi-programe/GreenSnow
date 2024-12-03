@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My First Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assests/CSS/style.css" />
+</head>
+<body>
+    <header>
+        <h1>GreenSnow</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="lawn.html">Service 1</a></li>
+                    <li><a href="snow.html">Service 2</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+    </nav>
+    <div class="col-md-6 d-flex flex-column justify-content-between">
+        <div class="card"></div>
+        <h1>Contact Form</h1>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="john"/>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="bob"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="example@gmail.com"/>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" id="phone" placeholder="(000)-000-000"/>
+                </div>
+                <div class="form-group">
+                    <label for="service-request">What services would like:</label>
+                    <input type="text" name="service-request" id="service-request" />
+                </div>
+                <button id="sign-up">Sign Up</button>
+            </form>
+        </div>
+    </main>
+    <script src="./Assests/js/form.js"></script>
+</body>
+</html>

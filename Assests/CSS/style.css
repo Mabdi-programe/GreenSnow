@@ -7,6 +7,9 @@ body {
     border-top: 10px solid mediumseagreen;
     border-bottom: 10px solid mediumseagreen;
   }
+  header img{
+    background-image: url(images/Logo.png);
+  }
   /* General Navbar Styles */
 .navbar {
     background-color: darkolivegreen;
@@ -133,12 +136,35 @@ main{
   max-width: 1000px;
   margin: 20px auto;
 }
+.hero {
+  background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.hero h1 {
+  font-size: 3em;
+}
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+.service {
+  padding: .5em;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 30px;
+  background: #f9f9f9;
+}
 hr{
   size: 3px;
 }
 footer{
   background-color: darkolivegreen;
-  background-image: url(images/logo.jpg);
   text-align: center;
   border-top: 1px solid slategrey;
   padding: 10px;
