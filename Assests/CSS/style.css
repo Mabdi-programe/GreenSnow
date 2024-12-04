@@ -9,6 +9,103 @@ body {
 }
 /* General Navbar Styles */
 .navbar {
+
+    background-color: darkolivegreen;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar img {
+    border-radius: 50%;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-link {
+    color: darkolivegreen;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    background-color: #444;
+    border-radius: 4px;
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    list-style-type: none;
+    background-color: #444;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+  
+  .dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #ccc;
+  }
+  
+  /* Show Dropdown Menu on Hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Dropdown Arrow */
+  .dropdown > .nav-link {
+    padding-right: 20px; /* Space for arrow */
+  }
+  
+  .dropdown > .nav-link::after {
+    content: '▼'; /* Unicode for downward arrow */
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdown:hover > .nav-link::after {
+    transform: translateY(-50%) rotate(180deg); /* Rotate arrow upwards on hover */
+  }
+  header{
+    text-align: center;
+    color: darkgreen;
+  }
+  .snow h2{
+    color: rgb(140, 193, 218);
+  }
+  
+nav ul{
+
   background-color: darkolivegreen;
   padding: 10px;
   display: flex;
@@ -44,6 +141,7 @@ body {
 }
 
 .dropdown-menu {
+
   list-style-type: none;
   background-color: #444;
   padding: 10px;
@@ -174,6 +272,15 @@ hr{
 size: 3px;
 }
 footer{
+  background-color: darkolivegreen;
+  background-image: url(images/logo.jpg);
+  text-align: center;
+  border-top: 1px solid slategrey;
+  padding: 10px;
+  color: white;
+  clear: both;
+ }
+ 
 background-color: darkolivegreen;
 text-align: center;
 border-top: 1px solid slategrey;
