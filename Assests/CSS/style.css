@@ -128,11 +128,7 @@ main{
   max-width: 1200px;
   margin: 20px auto;
 }
-main{
-  background-color: white;
-  max-width: 1000px;
-  margin: 20px auto;
-}
+
 hr{
   size: 3px;
 }

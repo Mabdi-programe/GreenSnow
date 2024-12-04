@@ -1,0 +1,121 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+header img {
+  max-height: 100px;
+  width: auto;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+}
+
+.navbar {
+  background-color: black;
+}
+
+body {
+  color: white;
+}
+
+main {
+  background-image: url('/Users/hunterboone/bootcamp/Project-1/Assests/images/temple-5909803_640.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.row img {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15%;
+  margin: 0 auto;
+  display: block;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+main > * {
+  position: relative;
+  z-index: 2;
+}
+
+.snow-service {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 5px;
+  padding-bottom: .5px;
+}
+
+.our-jobs {
+  
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reviews {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.border {
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 1.5rem;
+  margin: 20px 0;
+  text-align: center;
+  
+}
+
+footer {
+  background-color: black;
+}
+
+footer small {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .border{
+    padding: 1rem;
+  }
+  footer small {
+  padding-right: 20px;
+  padding-left: 20px;
+  }
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+  .border{
+    padding: 1rem;
+  }
+  footer small {
+    padding-right: 20px;
+    padding-left: 20px
+  }
+
+}
