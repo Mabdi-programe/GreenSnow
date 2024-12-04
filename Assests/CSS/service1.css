@@ -8,6 +8,10 @@ body {
   font-weight: bold;
 }
 
+nav li{
+  display: block;
+}
+
 .lawn-service {
   background-image: url(https://img.freepik.com/premium-photo/green-grass-frame-white-background_52253-1755.jpg?w=1060) ; 
   background-size: cover;
