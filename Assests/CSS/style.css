@@ -152,6 +152,18 @@ align-items: flex-start;
 width: 95%;
 height: auto;
 }
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1em;
+}
+.service {
+  padding: .5em;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 30px;
+  background: #F9F9F9;
+}
 .img{
 display: flex;
 align-self: center;
@@ -162,7 +174,6 @@ size: 3px;
 }
 footer{
 background-color: darkolivegreen;
-background-image: url(images/logo.jpg);
 text-align: center;
 border-top: 1px solid slategrey;
 padding: 10px;
