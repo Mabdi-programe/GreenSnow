@@ -30,9 +30,12 @@ The images below show the different pages of our site:
 
 ![alt text](<Screenshot 2024-12-03 203740.png>)
 
-![alt text](<Screenshot 2024-12-04 114247.png>)
+![alt text](<Screenshot 2024-12-04 at 6.21.53 PM.png>)
+
+![alt text](<Screenshot 2024-12-04 at 6.23.07 PM.png>)
 
 ![alt text](<Screenshot 2024-12-04 113551.png>)
+
 
 
 

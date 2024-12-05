@@ -23,11 +23,11 @@ nav {
 }
 
 body {
-  color: white;
+  color: rgb(69, 38, 38);
 }
 
-main {
-  background-image: url('/Users/hunterboone/bootcamp/Project-1/Assests/images/temple-5909803_640.jpg');
+main{
+  background-image: url('/Users/hunterboone/bootcamp/Project-1/Assests/images/temple-5909803_640.jpg') !important;
   background-size: cover;
   background-position: center;
   max-width: 100%;
