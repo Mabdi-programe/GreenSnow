@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,127 +12,34 @@ body {
   border-top: 10px solid mediumseagreen;
   border-bottom: 10px solid mediumseagreen;
 }
+.header-img{
+  border-radius: 50%;
+}
 /* General Navbar Styles */
 .navbar {
-
-    background-color: darkolivegreen;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  .navbar img {
-    border-radius: 50%;
-  }
-  .nav-menu {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .nav-link {
-    color: darkolivegreen;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    position: relative;
-  }
-  
-  .nav-link:hover {
-    background-color: #444;
-    border-radius: 4px;
-  }
-  
-  /* Dropdown Menu Styles */
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-menu {
-    list-style-type: none;
-    background-color: #444;
-    padding: 10px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    display: none;
-    border-radius: 4px;
-    z-index: 1000;
-  }
-  
-  .dropdown-menu li {
-    margin: 5px 0;
-  }
-  
-  .dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .dropdown-menu a:hover {
-    color: #ccc;
-  }
-  
-  /* Show Dropdown Menu on Hover */
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Dropdown Arrow */
-  .dropdown > .nav-link {
-    padding-right: 20px; /* Space for arrow */
-  }
-  
-  .dropdown > .nav-link::after {
-    content: '▼'; /* Unicode for downward arrow */
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.8em;
-    color: white;
-    transition: transform 0.3s ease;
-  }
-  
-  .dropdown:hover > .nav-link::after {
-    transform: translateY(-50%) rotate(180deg); /* Rotate arrow upwards on hover */
-  }
-  header{
-    text-align: center;
-    color: darkgreen;
-  }
-  .snow h2{
-    color: rgb(140, 193, 218);
-  }
-  
-nav ul{
-
   background-color: darkolivegreen;
   padding: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  
 }
-
 .nav-menu {
   display: flex;
-  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  text-align: center;
 }
 
 .nav-link {
-  color: darkolivegreen;
+  color: rgb(43, 44, 40);
   text-decoration: none;
   padding: 10px 15px;
   font-size: 16px;
   position: relative;
+  text-align: center;
 }
 
 .nav-link:hover {
@@ -138,12 +50,12 @@ nav ul{
 /* Dropdown Menu Styles */
 .dropdown {
   position: relative;
+  text-align: center;
 }
 
 .dropdown-menu {
-
   list-style-type: none;
-  background-color: #444;
+  background-color: #444 !important;
   padding: 10px;
   position: absolute;
   top: 40px;
@@ -174,11 +86,11 @@ nav ul{
 
 /* Dropdown Arrow */
 .dropdown > .nav-link {
-  padding-right: 20px; /* Space for arrow */
+  padding-right: 20px; 
 }
 
 .dropdown > .nav-link::after {
-  content: '▼'; /* Unicode for downward arrow */
+  content: '▼'; 
   position: absolute;
   right: 5px;
   top: 50%;
@@ -189,7 +101,40 @@ nav ul{
 }
 
 .dropdown:hover > .nav-link::after {
-  transform: translateY(-50%) rotate(180deg); /* Rotate arrow upwards on hover */
+  transform: translateY(-50%) rotate(180deg); 
+}
+  
+.dropdown > .nav-link::after {
+    content: '▼'; 
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: white;
+    transition: transform 0.3s ease;
+}
+  
+.dropdown:hover > .nav-link::after {
+    transform: translateY(-50%) rotate(180deg); 
+}
+header{
+    text-align: center;
+    color: darkgreen;
+}
+.about-p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+h2{
+    color: mediumseagreen;
+}
+.snow h2{
+    color: rgb(140, 193, 218);
 }
 header{
   text-align: center;
@@ -198,35 +143,9 @@ header{
 .snow h2{
   color: rgb(140, 193, 218);
 }
-
-nav ul{
-list-style-type: none;
-text-align: center;
+section{
+  padding: 20px;
 }
-nav li{
-display: inline;
-}
-nav a{
-text-decoration: none;
-padding-right: 10px;
-}
-nav a:link{
-color: grey;
-}
-nav a:visited{
-color: greenyellow;
-}
-nav a:hover{
-color: dimgrey;
-}
-nav a:active{
-color: darkgreen;
-}
-main{
-max-width: 1200px;
-margin: 20px auto;
-}
-
 main{
 background-color: white;
 max-width: 1000px;
@@ -234,6 +153,24 @@ margin: 20px auto;
 }
 main .header-color{
 color: darkgreen;
+}
+button{
+  border-radius: 10px !important;
+}
+.hero {
+  background: url('https://img.freepik.com/premium-photo/green-grass-frame-white-background_52253-1755.jpg?w=1060') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.hero h1 {
+  font-size: 3em;
+}
+.homepage-photo{
+  text-align: center;
 }
 .about-container{
   display: flex;
@@ -273,22 +210,36 @@ size: 3px;
 }
 footer{
   background-color: darkolivegreen;
-  background-image: url(images/logo.jpg);
   text-align: center;
   border-top: 1px solid slategrey;
-  padding: 10px;
+  /* padding: 10px; */
   color: white;
   clear: both;
- }
- 
-background-color: darkolivegreen;
-text-align: center;
-border-top: 1px solid slategrey;
-padding: 10px;
-color: white;
-clear: both;
+  padding: 20px 0; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+#footer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-div h4 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333; /* Adjust to your color theme */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 /*CSS without a media query--applies to all sizes unless overridden*/
 h1{
   text-align: center;
