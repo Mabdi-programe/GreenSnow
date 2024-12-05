@@ -3,50 +3,45 @@ header {
   align-items: center;
   width: 100%;
   background-color: black;
-}
-header img {
+ }
+ header img {
   max-height: 100px;
   width: auto;
   margin-top: 10px;
-}
-
-nav {
+ }
+ nav {
   background-color: black;
   display: flex;
   justify-content: center;
   flex: 1;
   text-align: center;
-}
-
-.navbar {
+ }
+ .navbar {
   background-color: black;
-}
-
-body {
-  color: rgb(69, 38, 38);
-}
-
-main{
-  background-image: url('/Users/hunterboone/bootcamp/Project-1/Assests/images/temple-5909803_640.jpg') !important;
+ }
+ body {
+  color: white;
+ }
+ main {
+  background-image:
+ url('/Users/hunterboone/bootcamp/Project-1/Assests/images/temple-5909803_640.jpg');
   background-size: cover;
   background-position: center;
   max-width: 100%;
-  margin: 0;
+ margin: 0;
   position: relative;
-}
-
-.row img {
+ }
+ .row img {
   padding-left: 15px;
-  padding-right: 15px;
+    padding-right: 15px;
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 15%;
   margin: 0 auto;
   display: block;
-}
-
-main::before {
+ }
+ main::before {
   content: "";
   position: absolute;
   top: 0;
@@ -55,51 +50,42 @@ main::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
-
-main > * {
+ }
+ main > * {
   position: relative;
   z-index: 2;
-}
-
-.snow-service {
+ }
+ .snow-service {
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 5px;
   padding-bottom: .5px;
-}
-
-.our-jobs {
-  
-  background-color: rgba(0, 0, 0, 0.5);
+ }
+ .our-jobs {
+   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.reviews {
+ }
+ .reviews {
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.border {
+ }
+ 
+ .border {
   border-radius: 15px;
   border: 2px solid white;
   padding: 1.5rem;
   margin: 20px 0;
   text-align: center;
-  
-}
-
-footer {
+  }
+ footer {
   background-color: black;
-}
-
-footer small {
+ }
+ footer small {
   padding-right: 20px;
   padding-left: 20px;
-}
-
-@media only screen and (max-width: 1024px) {
+ }
+ @media only screen and (max-width: 1024px) {
   .border{
     padding: 1rem;
   }
@@ -107,15 +93,13 @@ footer small {
   padding-right: 20px;
   padding-left: 20px;
   }
-}
-/* CSS Adjustments for Smartphones */
-@media only screen and (max-width: 768px) {
+ }
+ /* CSS Adjustments for Smartphones */
+ @media only screen and (max-width: 768px) {
   .border{
     padding: 1rem;
   }
   footer small {
     padding-right: 20px;
     padding-left: 20px
-  }
-
-}
+ } }
