@@ -59,3 +59,5 @@ This project was completed using Windows and Apple operating systems, Bootstrap 
 Screenshots
 
 Links
+- https://github.com/Mabdi-programe/Project-1
+- https://mabdi-programe.github.io/Project-1/
