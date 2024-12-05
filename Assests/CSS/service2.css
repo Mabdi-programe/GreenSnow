@@ -1,41 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-top: 10px solid mediumseagreen;
+  border-bottom: 10px solid mediumseagreen;
+}
 header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
   background-color: black;
-}
-header img {
+ }
+  header img {
   max-height: 100px;
   width: auto;
   margin-top: 10px;
+ }
+.header-img{
+  border-radius: 50%;
 }
-
+/* General Navbar Styles */
+.navbar {
+  background-color: darkolivegreen;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 nav {
   background-color: black;
   display: flex;
   justify-content: center;
   flex: 1;
   text-align: center;
+ }
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
 }
 
-.navbar {
+.nav-link {
+  color: rgb(43, 44, 40);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-menu {
+  list-style-type: none;
+  background-color: #444 !important;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  display: none;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  color: #ccc;
+}
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Arrow */
+.dropdown > .nav-link {
+  padding-right: 20px; 
+}
+
+.dropdown > .nav-link::after {
+  content: '▼'; 
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover > .nav-link::after {
+  transform: translateY(-50%) rotate(180deg); 
+}
+  
+.dropdown > .nav-link::after {
+    content: '▼'; 
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: white;
+    transition: transform 0.3s ease;
+}
+  
+.dropdown:hover > .nav-link::after {
+    transform: translateY(-50%) rotate(180deg); 
+}
+ .navbar {
   background-color: black;
-}
-
-body {
-  color: rgb(69, 38, 38);
-}
-
-main{
-  background-image: url('/Users/hunterboone/bootcamp/Project-1/Assests/images/temple-5909803_640.jpg') !important;
+ }
+ body {
+  color: white;
+ }
+ main {
+  background-image: url('https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2021%2F01%2F11%2F21%2F39%2Ftemple-5909803_1280.jpg');
   background-size: cover;
   background-position: center;
   max-width: 100%;
-  margin: 0;
+ margin: 0;
   position: relative;
-}
-
-.row img {
+ }
+ .row img {
   padding-left: 15px;
   padding-right: 15px;
   width: 200px;
@@ -44,9 +159,8 @@ main{
   border-radius: 15%;
   margin: 0 auto;
   display: block;
-}
-
-main::before {
+ }
+ main::before {
   content: "";
   position: absolute;
   top: 0;
@@ -55,51 +169,64 @@ main::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
-
-main > * {
+ }
+ main > * {
   position: relative;
   z-index: 2;
-}
-
-.snow-service {
+ }
+ .snow-service {
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 5px;
   padding-bottom: .5px;
-}
-
-.our-jobs {
-  
-  background-color: rgba(0, 0, 0, 0.5);
+ }
+ .our-jobs {
+   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.reviews {
+ }
+ .reviews {
   background-color: rgba(0, 0, 0, 0.5);
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.border {
+ }
+ .border {
   border-radius: 15px;
   border: 2px solid white;
   padding: 1.5rem;
   margin: 20px 0;
   text-align: center;
+  }
+  footer{
+    background-color: black;
+    text-align: center;
+    border-top: 1px solid slategrey;
+    /* padding: 10px; */
+    color: white;
+    clear: both;
+    padding: 20px 0; /* Adjust padding as needed */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
   
-}
-
-footer {
-  background-color: black;
-}
-
-footer small {
+  #footer-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  #footer-div h4 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333; /* Adjust to your color theme */
+  }
+ footer small {
   padding-right: 20px;
   padding-left: 20px;
-}
-
-@media only screen and (max-width: 1024px) {
+ }
+ @media only screen and (max-width: 1024px) {
   .border{
     padding: 1rem;
   }
@@ -107,15 +234,13 @@ footer small {
   padding-right: 20px;
   padding-left: 20px;
   }
-}
-/* CSS Adjustments for Smartphones */
-@media only screen and (max-width: 768px) {
+ }
+ /* CSS Adjustments for Smartphones */
+ @media only screen and (max-width: 768px) {
   .border{
     padding: 1rem;
   }
   footer small {
     padding-right: 20px;
     padding-left: 20px
-  }
-
-}
+ } }
